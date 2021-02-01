@@ -74,6 +74,15 @@ h1, h2, h3, h4,h5, h6 {
     padding-right: 15px;
 }
 
+.icon{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
 
 /* NAV */
 
@@ -362,10 +371,30 @@ nav{
 }
 
 
-.card .icon{
+.team .icon{
     min-width: 20px;
     min-height: 20px;
     padding: 12px;
+}
+
+.team .icon:hover{
+    background-color: var(--active-color);
+}
+
+.team .icon-instagram{
+    background-image: url(../images/instagram.svg);
+}
+
+.team .icon-twitter{
+    background-image: url(../images/twitter.svg);
+}
+
+.team .icon-facebook{
+    background-image: url(../images/facebook.svg);
+}
+
+.team .icon-linkedin{
+    background-image: url(../images/linkedin.svg);
 }
 
 
@@ -381,7 +410,7 @@ nav{
     justify-content: space-between;
 }
 
-.clients .icon{
+.clients .icon-clients{
     min-width: 170px;
     min-height: 90px;
     text-align: center;
@@ -390,7 +419,7 @@ nav{
     border: solid var(--icon-color);
 }
 
-.clients .icon:hover {
+.clients .icon-clients:hover {
     border: solid var(--active-color);
 }
 
@@ -565,31 +594,24 @@ nav{
 }
 
 
-.invate .icon::before{
-    content: "";
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-repeat:no-repeat;
-    background-position: center;
+.invate .icon{
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
 }
 
 
-.icon-instagram::before{
+.invate .icon-instagram{
     background-image: url(../images/instagram_white.svg);
 }
 
-.icon-twitter::before{
-    background-image: url(../images/twitter_white.png);
+.invate .icon-twitter{
+    background-image: url(../images/twitter_white.svg);
 }
 
-.icon-facebook::before{
+.invate .icon-facebook{
     background-image: url(../images/facebook_white.svg);
 }
 
-.icon-linkedin::before{
+.invate .icon-linkedin{
     background-image: url(../images/linkedin_white.svg);
 }
 
